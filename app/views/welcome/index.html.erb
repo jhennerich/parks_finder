@@ -13,3 +13,11 @@
     </ul>
   </div>
 </nav>
+<h3>Park count = <%= @parks.count %>  </h3>
+<% @parks.each do |park| %>
+Name: <%= park.name %> <br>
+description: <%= park.description %> <br>
+directions: <%= park.directions %> <br>
+standard hours for operation: <%= park.hours %> <br>
+<hr>
+<% end %>
